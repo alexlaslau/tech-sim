@@ -1,0 +1,20 @@
+[
+    {
+      "id": "tech-saas",
+      "name": "Tech SaaS Startup",
+      "description": "Build a cloud-based software solution for businesses.",
+      "initialCash": 1000000,
+      "initialEmployees": 5,
+      "productName": "CloudSuite",
+      "industryTrend": 1.2
+    },
+    {
+      "id": "mobile-app",
+      "name": "Mobile App Startup",
+      "description": "Create the next big mobile application.",
+      "initialCash": 500000,
+      "initialEmployees": 4,
+      "productName": "SnapApp",
+      "industryTrend": 1.3
+    }
+  ]

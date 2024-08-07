@@ -3,7 +3,7 @@ app OpenSaaS {
     version: "^0.14.0"
   },
 
-  title: "My Open SaaS App",
+  title: "Business Sim App",
 
   head: [
         "<meta property='og:type' content='website' />",
@@ -120,6 +120,7 @@ route EmailVerificationRoute { path: "/email-verification", to: EmailVerificatio
 page EmailVerificationPage {
   component: import { EmailVerificationPage } from "@src/auth/email-and-pass/EmailVerificationPage",
 }
+
 //#endregion
 
 //#region User
@@ -150,6 +151,12 @@ route DemoAppRoute { path: "/demo-app", to: DemoAppPage }
 page DemoAppPage {
   authRequired: true,
   component: import DemoAppPage from "@src/demo-ai-app/DemoAppPage"
+}
+
+//#region TechSim App
+route TechSim { path: "/tech-sim", to: TechSimPage }
+page TechSimPage {
+  component: import TechSimPage from "@src/tech-sim/TechSim"
 }
 
 action generateGptResponse {

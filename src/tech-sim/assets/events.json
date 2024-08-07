@@ -1,0 +1,78 @@
+[
+  {
+    "message": "Viral social media post! Revenue spike",
+    "effect": {
+      "revenue": 1.2
+    }
+  },
+  {
+    "message": "Tech conference attended. New partnerships formed",
+    "effect": {
+      "revenue": 100000
+    }
+  },
+  {
+    "message": "Employee turnover. Productivity temporarily affected",
+    "effect": {
+      "productProgress": -5
+    }
+  },
+  {
+    "message": "Positive press coverage. Brand value increased",
+    "effect": {
+      "marketingEffectiveness": 5
+    }
+  },
+  {
+    "message": "Major bug discovered. Customer satisfaction dropped",
+    "effect": {
+      "customerSatisfaction": -10
+    }
+  },
+  {
+    "message": "Successful product update. User experience improved",
+    "effect": {
+      "userExperience": 10
+    }
+  },
+  {
+    "message": "New AI feature launched. User engagement spiked",
+    "effect": {
+      "userEngagement": 15,
+      "revenue": 1.1
+    }
+  },
+  {
+    "message": "Data breach reported. Trust issues arose",
+    "effect": {
+      "customerSatisfaction": -20,
+      "revenue": 0.9
+    }
+  },
+  {
+    "message": "Successful crowdfunding campaign. Capital raised",
+    "effect": {
+      "capital": 500000
+    }
+  },
+  {
+    "message": "Key developer hired. Development speed increased",
+    "effect": {
+      "productProgress": 10
+    }
+  },
+  {
+    "message": "Server outage. Service disrupted temporarily",
+    "effect": {
+      "userExperience": -8,
+      "revenue": 0.95
+    }
+  },
+  {
+    "message": "Positive review from tech influencer. New users acquired",
+    "effect": {
+      "userAcquisition": 5000,
+      "marketingEffectiveness": 8
+    }
+  }
+]

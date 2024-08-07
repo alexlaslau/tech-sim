@@ -1,0 +1,11 @@
+{
+    "burnRatePerEmployee": 10000,
+    "hireCost": 100000,
+    "marketingCampaignCost": 200000,
+    "baseRevenuePerEmployee": 5000,
+    "monthlyTimeIncrement": 30,
+    "maxVisibleEvents": 20,
+    "randomEventProbability": 0.3,
+    "customerSatisfactionThreshold": 50,
+    "customerSatisfactionPenalty": 0.95
+  }
