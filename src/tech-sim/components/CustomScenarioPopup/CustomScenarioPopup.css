@@ -1,0 +1,120 @@
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.3s ease;
+}
+
+.popup-content {
+    background-color: var(--card-background);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--accent-color);
+}
+
+#custom-scenario-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 100%;
+    padding: 15px;
+}
+
+#custom-scenario-form input,
+#custom-scenario-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+#custom-scenario-form input:focus,
+#custom-scenario-form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+#custom-scenario-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#custom-scenario-form input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#custom-scenario-form input::-webkit-outer-spin-button,
+#custom-scenario-form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#custom-scenario-form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#custom-scenario-form button:hover {
+    background-color: #27ae60;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(46, 204, 113, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+    .popup-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    #custom-scenario-form {
+        padding: 10px;
+    }
+
+    #custom-scenario-form input,
+    #custom-scenario-form textarea,
+    #custom-scenario-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

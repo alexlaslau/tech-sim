@@ -1,0 +1,73 @@
+#game-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: var(--card-background);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/* Grid Layouts */
+#company-stats,
+#team-allocation,
+#product-development,
+#financial-decisions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Card Styles */
+.stat,
+.allocation-item,
+.product-item,
+.financial-item {
+    background-color: var(--card-background);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat:hover,
+.allocation-item:hover,
+.product-item:hover,
+.financial-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Action Buttons */
+.actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.gameButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    font-size: 14px;
+    color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    margin: 0 5px;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.gameButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+}

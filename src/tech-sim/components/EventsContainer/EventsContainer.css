@@ -1,0 +1,46 @@
+#events-container {
+    position: fixed;
+    bottom: 85px;
+    left: 0;
+    right: 0;
+    background-color: var(--card-background);
+    border-top: 2px solid var(--primary-color);
+    padding: 10px;
+    max-height: 80px;
+    overflow-y: auto;
+    box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+#current-time {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+    font-size: 12px;
+}
+
+#event-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#event-list li {
+    margin-bottom: 5px;
+    font-size: 12px;
+    padding: 3px 8px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
